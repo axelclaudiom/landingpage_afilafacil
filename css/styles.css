@@ -1,0 +1,176 @@
+html, body {
+  height: 100%; /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Configura el body como un contenedor flex */
+}
+
+.container {
+  flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+nav {
+  background: linear-gradient(90deg, #000, #333); /* Fondo con degradado */
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between; /* Espaciado entre el logo y los enlaces */
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre los enlaces */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav ul li a:hover {
+  color: #f0a500; /* Color dorado al pasar el mouse */
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto; /* Empuja el footer al final */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.logo {
+    padding-left: 20px;
+  height: 100px; /* Ajusta el tamaño del logo en la barra de navegación */
+}
+
+.footer-logo {
+  height: 60px; /* Ajusta el tamaño del logo en el footer */
+  margin-bottom: 1rem; /* Espaciado debajo del logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#utensilios {
+  background-color: #f9f9f9; /* Fondo claro para diferenciar la sección */
+  padding: 2rem 0;
+}
+
+#utensilios h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#utensilios ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+#utensilios ul li {
+  margin-bottom: 0.5rem;
+}
+
+#distribucion {
+  background-color: #fff; /* Fondo blanco para mantener consistencia */
+  padding: 2rem 0;
+  border-top: 1px solid #ddd; /* Línea superior para separar la sección */
+}
+
+.distribucion-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.distribucion-texto {
+  flex: 1;
+}
+
+.distribucion-texto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.distribucion-texto p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.distribucion-logo {
+  flex: 0 0 150px; /* Espacio fijo para el logo */
+  text-align: center; /* Cambia de 'right' a 'center' para alinearlo mejor */
+  margin-right: 60px; /* Ajusta este valor para mover el logo más a la izquierda */
+}
+
+.distribucion-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 15px;
+  }
+}
